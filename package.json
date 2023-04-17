@@ -1,0 +1,8 @@
+{
+  "name": "@dilation-player/core",
+  "description": "Core to start Dilation Player",
+  "version": "1.0.0",
+  "keywords": [
+    "web app media player", "player", "media player"
+  ]
+}
