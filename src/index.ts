@@ -2,13 +2,15 @@
 // Class {DilationPlayer}
 // ====================================================
 export default class DilationPlayer {
-  completeCounter = 0;
+  completeCounter: any = 0;
+  config: any;
+  extensions: Array<any> = [];
 
   /**
    * Constructor
    * @param config
    */
-  constructor(root, config) {
+  constructor(root: string, config: any) {
     config = config || {};
     config.elements = config.elements || {};
     config.elements.root = root;
@@ -22,7 +24,7 @@ export default class DilationPlayer {
   }
 
   create() {
-    if (this.config.extensions) this.config.extensions.forEach(element => {
+    if (this.config.extensions) this.config.extensions.forEach((element: any) => {
       this.extensions.push(new element({context: this}));
     });
 

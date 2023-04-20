@@ -1,8 +1,19 @@
 {
   "name": "@dilation-player/core",
   "description": "Core to start Dilation Player",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": [
-    "web app media player", "player", "media player"
-  ]
+    "web app media player",
+    "player",
+    "media player"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.4"
+  }
 }
